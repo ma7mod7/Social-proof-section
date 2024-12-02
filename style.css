@@ -1,0 +1,197 @@
+:root{
+
+    Very_Dark_Magenta: hsl(300, 43%, 22%);
+    Soft_Pink: hsl(333, 80%, 67%);
+    Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    Light_Grayish_Magenta: hsl(300, 24%, 96%);
+    Whitec: hsl(0, 0%, 100%);
+
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    outline:none;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "League Spartan", sans-serif;
+}
+
+body{
+    height: 100svh;
+    max-height: 100svh;  
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+    background-image: url(social-proof-section-master/images/bg-pattern-bottom-desktop.svg),url(social-proof-section-master/images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    
+}
+
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin-top: 100px;
+    
+}
+
+.first__div--left h1{
+    color:hsl(300, 43%, 22%);
+    width: 260px;
+    font-size: 40px;
+    margin-bottom: 16px;
+
+}
+.first__div--left p{
+    width: 380px;
+    color: hsl(303, 10%, 53%);
+    line-height: 18px;
+    font-size: 18px;
+
+}
+.Stars{
+    display: flex;   
+    background-color:hsl(300, 24%, 96%);
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 8px;
+    width: 420px;
+    
+}
+.Stars img{
+    margin-right:3px;
+}
+.Stars p{
+    margin-left: 20px;
+    margin-top: 3px;
+    font-weight: 700;
+    color:hsl(300, 43%, 22%);
+}
+.starimg{
+    margin-left: 10px;
+}
+.first__div--right__one{
+    transform: translatex(-80px);
+}
+
+.first__div--right__two{
+    transform: translatex(-40px);
+
+}
+.second{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    gap: 25px;
+}
+.second__card--general{
+    background-color: hsl(300, 43%, 22%);
+    padding: 25px;
+    border-radius: 8px;
+    height: 250px;
+
+}
+.info--name{
+    display: flex;
+
+}
+span{
+    display: block;
+    color: hsl(333, 80%, 67%);
+    margin-top: 3px;
+}
+.info--name img{
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+.info--name p{
+    color: white;
+    margin-top: 10px;
+}
+.info .main--text{
+    color: white;
+    margin-top: 30px;
+    line-height: 20px;
+}
+.second__card--second{
+    margin-top: 20px;
+}
+.second__card--third{
+    margin-top: 40px;
+
+}
+@media (max-width:769px){
+    body{
+        background-image: url(social-proof-section-master/images/bg-pattern-top-mobile.svg),url(social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat,no-repeat;
+        background-size: contain,contain;
+    }
+    .first{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    }
+    .first__div--left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first__div--left h1 {
+        width:none;
+        text-align: center;
+    }
+    .first__div--left p{
+        text-align: center;
+        width: none;
+        width: 310px;
+    }
+    .Stars{
+        display: flex; 
+        flex-direction: column;  
+        background-color:hsl(300, 24%, 96%);
+        padding: 14px;
+        margin-top: 12px;
+        border-radius: 8px;
+        width: 260px;
+    }
+    .starimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .first__div--right__one{
+        transform: translatex(0);
+    }
+    .first__div--right__two{
+        transform: translatex(0);
+    }
+    .first__div--right__three{
+        transform: translatex(0);
+    }
+    .second{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .second__card--general{
+        width: 310px;
+    }
+    .second__card--third{
+        margin-bottom: 20px;
+    }
+}
